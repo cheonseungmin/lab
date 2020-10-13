@@ -1,5 +1,5 @@
 # lab
-학교 연계 인턴쉽 지원을 위한 실험실 웹 사이트
+학교 연계 인턴쉽 지원을 위한 실험실 웹 사이트  
 ![image](https://user-images.githubusercontent.com/63775931/95895275-63433780-0dc5-11eb-8114-2389cd042a26.png)  
 슬라이딩 배너 구현  
 
