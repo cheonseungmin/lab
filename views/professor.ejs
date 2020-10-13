@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AVR자율주행연구실</title>
+
+   <link rel="stylesheet" type="text/css" href="./css/banner.css">
+   
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            <%- include ('jBanner') %>
+        });
+    </script>
+</head>
+
+<body>
+    <%- include ('banner') %>
+    
+    <div style="display: inline-block; height: 200px;">hide</div><br>
+    <div>
+        <div style="width: 45%; display: inline-block; margin-left: 5%">
+            <div style="color: darkblue; font-weight: bold; font-size: 2.5rem;">PROFESSOR</div>
+            <div>Dr. Joon-Woong Lee</div>
+            <hr>
+            <span style="font-weight: bold;">Phone</span>: (062)530-1781<br>
+            <span style="font-weight: bold;">E-mail</span>: joonlee@jnu.ac.kr<br>
+
+
+            <div style="font-weight: bold">Educational Background</div>
+
+            <div style="margin: 5px;">
+                Ph.D. in Industrial and Systems Engineering, May 2011, Rutgers, the State University of New Jersey, New Brunswick, NJ.
+                Thesis: A methodology for spatial and time series data mining and its applications. (Advisor: Dr. Myong K. Jeong)
+                M.S. in Industrial Engineering, February 2001, Korea University, Seoul, Korea
+                Thesis: Customer segmentation on on-line market using artificial neural networks (Advisor: Dr. Seong-in Kim)
+                B.S. in Industrial Engineering, February 1997, Chonnam National University, Gwangju, Korea
+            </div>
+
+            <div style="font-weight: bold">Research Interests</div>
+            <div style="margin: 5px;">
+                Data mining, process monitoring, applied operations research, quality engineering, semiconductor manufacturing, intelligent transportation systems, signal and image processing, wavelets.
+            </div>
+
+            <div style="font-weight: bold">Professional Experience</div>
+            <div style="margin: 5px;">
+                Associate Professor, Department of Industrial Engineering, Chonnam National University, Gwangju, Korea, March 2018-present.
+                Assistant Professor, Department of Industrial Engineering, Chonnam National University, Gwangju, Korea, March 2014-Feb. 2018.
+                Postdoctoral Fellow and Full-time Lecturer, Department of Industrial and Systems Engineering, Khalifa University, Abu Dhabi, UAE, August 2011-February 2014.
+                Research Member, SK C&C, Seoul, Korea, February 2001-April 2005.
+            </div>
+
+            <div style="font-weight: bold">Honors and Awards</div>
+            <div style="margin: 5px;">
+                The Excellence in English Teaching Award from Chonnam National University, 2018.
+                The Excellence in Teaching Award from Chonnam National University, 2017.
+                Beak-Am Technology Award, Korean Institute of Industrial Engineers, 2011.
+            </div>
+        </div>
+
+        <div style="width: 48%; display: inline-block; text-align: center; vertical-align: top;">
+            <img src="pictures/professor/professor.jpg" width="420px" height="516px">
+        </div>
+    </div>
+    
+    <%- include ('footer') %>
+</body>
+
+</html>

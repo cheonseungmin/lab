@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    width: 100%;
+    position: fixed;
+    background: black;
+    padding: 20px 50px 20px 50px;
+    font-size: 40px;
+}
+
+#ul {
+    background-color: black;
+}
+
+.dropmenu {
+    text-align: center;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.dropmenu ul ul {
+    position: absolute;
+    display: none;
+}
+
+.dropmenu ul ul li {
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+.dropmenu ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.dropmenu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.dropmenu ul li a:hover {
+    color: gray;
+}
+
+
+.button {
+    text-align: right;
+    color: gray;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.banner a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.banner a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.button a:link {
+    color: gray;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.picture {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.picture ul {
+    position: absolute;
+    list-style: none;
+}
+
+.picture li {
+    float: left;
+}
+
+.banner a:link {
+    color: white;
+    text-decoration: none;
+}

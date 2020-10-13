@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AVR자율주행연구실</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/banner.css">
+    <style>
+        .icon {
+            display: inline-block;
+            width: 400px;
+            margin: 30px;
+        }
+    </style>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            <%- include ('jBanner') %>
+        });
+
+    </script>
+</head>
+
+<body>
+    <%- include ('banner') %>
+    <div style="display: inline-block; height: 70px;">hide</div>
+
+    <div style="display: inline-block; text-align: center; width: 100%;  height: 130px;  padding-top: 7%; background: white;">
+        <div style="font-size: 2rem;">
+            RESEARCHERS
+        </div>
+    </div>
+
+    <div style="display: inline-block; width: 100%; height: 500px;">
+        <div style="text-align: center">
+            <div class="icon">
+                <img src="pictures/researchers/0.png">
+                <div>
+                    Jeong-Min Park<br>
+                    <span style="font-size: 0.7rem;">
+                        Lab Manager
+                    </span>
+                </div>
+            </div>
+
+            <div class="icon">
+                <img src="pictures/researchers/1.png">
+                <div>
+                    Jong-Min Kim<br>
+                    <span style="font-size: 0.7rem;">
+                        Researcher
+                    </span>
+                </div>
+            </div>
+
+            <div class="icon">
+                <img src="pictures/researchers/2.png">
+                <div>
+                    Dong-Won Sim<br>
+                    <span style="font-size: 0.7rem;">
+                        Researcher
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include ('footer') %>
+</body>
+
+</html>

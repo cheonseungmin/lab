@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AVR자율주행연구실</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/banner.css">
+    <style>
+        .icon {
+            display: inline-block;
+            width: 400px;
+            margin: 30px;
+        }
+
+    </style>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            <%- include ('jBanner') %>
+        });
+
+    </script>
+</head>
+
+<body>
+    <%- include ('banner') %>
+    <div style="display: inline-block; height: 98px;">hide</div>
+
+    <div style="margin: 7% 25% 25% 25%;">
+        <div style="font-size: 2rem; font-weight: bold;"><%= title %></div>
+        <div style="font-size: 0.8rem; color: gray;">date: <%= date %></div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <img src="../pictures/activities/<%= picture %>">
+        </div>
+        <div>
+            <%= contents %>
+        </div>
+    </div>
+    <a href="/delete?title=<%= title %>&picture=<%= picture %>&contents=<%= contents %>&date=<%= date %>">
+        <div style="display: inline-block; margin-left: 67%;">
+            삭제하기
+        </div>
+    </a>
+    <%- include ('footer') %>
+</body>
+
+</html>

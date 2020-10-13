@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AVR자율주행연구실</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/banner.css">
+    <style>
+        .icon {
+            display: inline-block;
+            width: 400px;
+            margin: 30px;
+        }
+        
+        hr {
+            font-weight: 1px;
+        }
+
+    </style>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            <%- include ('jBanner') %>
+        });
+
+    </script>
+</head>
+
+<body>
+    <%- include ('banner') %>
+    <div style="display: inline-block; height: 98px;">hide</div>
+    </div>
+    <div style="padding: 5%;">
+        <% for(let i=0; i<rows.length; i++) { %>
+        <a href="/content?title=<%= rows[i].title %>&picture=<%= rows[i].picture %>&contents=<%= rows[i].contents %>&date=<%= rows[i].date %>">
+            <div style="display: inline-block; margin: 2px; background: white; width: 90%; height: 190px;">
+                <div style="display: inline-block; width: 208px; height: 150px; vertical-align: top; padding: 20px;">
+                    <img src="../pictures/activities/<%= rows[i].picture %>" width="208" height="150px;">
+                </div>
+                <div style="display: inline-block; padding: 2%;">
+                    <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">
+                        <%= rows[i].title %>
+                    </div>
+                    <div style="color: smokewhite; font-size: 0.8rem;">
+                        <%= rows[i].contents %>
+                    </div>
+                    <div style="color: gray; font-size: 0.8rem;">
+                        date: <%= rows[i].date %>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </a>
+        <% } %>
+    </div>
+    <a href="/write">
+        <div style="display: inline-block; margin-left: 92%;">WRITE</div>
+    </a>
+    <br>
+    <br>
+
+    <%- include ('footer') %>
+
+</body>
+
+</html>

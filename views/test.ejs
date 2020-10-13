@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AVR자율주행연구실</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/banner.css">
+    <style>
+        .icon {
+            display: inline-block;
+            width: 400px;
+            margin: 30px;
+        }
+
+    </style>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            <% include jBanner.ejs %>
+        });
+
+    </script>
+</head>
+
+<body>
+    <% include banner.ejs %>
+    <div style="display: inline-block; height: 98px;">hide</div>
+
+    <div style="margin: 7% 25% 25% 25%;">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            글 제목: <input type="text" name="title"><br><br>
+            <hr><br>
+            
+            <input type="file" name="picture"><br><br>
+            
+            <textarea cols="105" rows="20" name="contents">내용 입력</textarea>
+            <input type="submit" value="WRITE">
+
+        </form>
+    </div>
+
+    <% include footer.ejs %>
+</body>
+
+</html>
