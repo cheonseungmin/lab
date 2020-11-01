@@ -1,4 +1,3 @@
-# lab
 # 학교 연계 인턴쉽 지원을 위한 실험실 웹 사이트  
 ![녹화_2020_11_01_16_50_07_803](https://user-images.githubusercontent.com/63775931/97797678-51391400-1c62-11eb-8be6-c3fcc629bf0b.gif)   
 
